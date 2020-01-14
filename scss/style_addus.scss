@@ -90,21 +90,26 @@
     }
 
 
-    .aboutme {
-        width: 700px;
-        margin: 10px auto;
-        font-family: 'Noto Sans TC', sans-serif;
+    .about_content {
+        width: 100%;
 
-        h1,
-        h3,
-        h4,
-        h5,
-        h6 {
-            letter-spacing: 3px;
-            line-height: 50px;
+        .aboutme {
+            width: 700px;
+            margin: 10px auto;
             font-family: 'Noto Sans TC', sans-serif;
+
+            h1,
+            h3,
+            h4,
+            h5,
+            h6 {
+                letter-spacing: 3px;
+                line-height: 50px;
+                font-family: 'Noto Sans TC', sans-serif;
+            }
         }
     }
+
 
 
 

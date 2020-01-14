@@ -90,17 +90,21 @@
   z-index: 1;
 }
 
-.all .aboutme {
+.all .about_content {
+  width: 100%;
+}
+
+.all .about_content .aboutme {
   width: 700px;
   margin: 10px auto;
   font-family: 'Noto Sans TC', sans-serif;
 }
 
-.all .aboutme h1,
-.all .aboutme h3,
-.all .aboutme h4,
-.all .aboutme h5,
-.all .aboutme h6 {
+.all .about_content .aboutme h1,
+.all .about_content .aboutme h3,
+.all .about_content .aboutme h4,
+.all .about_content .aboutme h5,
+.all .about_content .aboutme h6 {
   letter-spacing: 3px;
   line-height: 50px;
   font-family: 'Noto Sans TC', sans-serif;
