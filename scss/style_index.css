@@ -148,7 +148,7 @@
 
 .all .content .content_group {
   width: 700px;
-  margin-top: 20px;
+  margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
   display: -webkit-box;
@@ -163,8 +163,8 @@
 }
 
 .all .content .content_group .content_box .card_img {
-  width: 100%;
-  height: 120px;
+  width: 80%;
+  height: 100px;
   background-size: 100% 100%;
 }
 
@@ -223,18 +223,22 @@
   opacity: 1;
 }
 
-.all .div_box .division_introduce {
+.all .div_box .division_box {
+  width: 100%;
+  margin: 20px auto;
+}
+
+.all .div_box .division_box .division_introduce {
   width: 700px;
-  margin: 10px auto 30px auto;
   font-family: 'Noto Sans TC', sans-serif;
 }
 
-.all .div_box .division_introduce h5 {
+.all .div_box .division_box .division_introduce h5 {
   letter-spacing: 10px;
   padding-bottom: 30px;
 }
 
-.all .div_box .division_introduce p {
+.all .div_box .division_box .division_introduce p {
   letter-spacing: 5px;
   line-height: 10px;
 }
