@@ -1,0 +1,253 @@
+.all {
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.all .nav {
+  width: 100%;
+  height: 80px;
+  padding: 0;
+}
+
+.all .nav .navbar {
+  width: 1000px;
+  height: 80px;
+  padding: 0;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.all .nav .navbar .logo {
+  width: 100px;
+  height: 80px;
+  background-image: url(/img/logo_3.png);
+  background-size: 100% 100%;
+  overflow: hidden;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.all .nav .navbar .logo_title h2 {
+  font-family: 'Noto Sans TC', sans-serif;
+  text-align: center;
+}
+
+.all .nav .navbar .logo_title p {
+  font-family: 'Noto Sans TC', sans-serif;
+  text-align: center;
+  line-height: 0;
+}
+
+.all .nav .navbar .navmenu {
+  position: relative;
+  display: inline-block;
+}
+
+.all .nav .navbar .navmenu:hover .navmenu_content {
+  display: block;
+}
+
+.all .nav .navbar .navmenu .menu {
+  background-image: url(/img/menuicon.png);
+  background-size: 100% 100%;
+  width: 50px;
+  height: 40px;
+  padding: 0;
+  border: none;
+}
+
+.all .nav .navbar .navmenu .navmenu_content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 100px;
+  -webkit-box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5);
+  z-index: 99;
+}
+
+.all .nav .navbar .navmenu .navmenu_content a {
+  font-family: 'Noto Sans TC', sans-serif;
+  color: black;
+  padding: 12px 18px;
+  text-decoration: none;
+  display: block;
+}
+
+.all .nav .navbar .navmenu .navmenu_content a:hover {
+  background-color: #ddd;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 15'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23453886' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-size: 20%;
+  border-bottom: 0;
+  text-decoration: none;
+  color: #a000bd;
+  z-index: 1;
+}
+
+.all .swiper-container {
+  width: 1000px;
+  height: 350px;
+}
+
+.all .swiper-container .swiper-wrapper .swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-size: cover;
+  overflow: hidden;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.all .swiper-container .swiper-wrapper #banner_1 {
+  background-image: url(/img/banner01.jpg);
+}
+
+.all .swiper-container .swiper-wrapper #banner_2 {
+  background-image: url(/img/banner02.jpg);
+}
+
+.all .swiper-container .swiper-wrapper #banner_3 {
+  background-image: url(/img/banner03.jpg);
+}
+
+.all .swiper-container .swiper-wrapper #banner_4 {
+  background-image: url(/img/banner04.jpg);
+}
+
+.all .news {
+  width: 100%;
+  height: 250px;
+  margin-top: 20px;
+}
+
+.all .news .news_table {
+  width: 1000px;
+  height: 250px;
+  background-color: #eee;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+.all .content {
+  width: 100%;
+  height: 160px;
+  background-color: #fff;
+}
+
+.all .content .content_group {
+  width: 700px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.all .content .content_group .content_box {
+  width: 150px;
+  height: 150px;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+.all .content .content_group .content_box .card_img {
+  width: 100%;
+  height: 120px;
+  background-size: 100% 100%;
+}
+
+.all .content .content_group .content_box .card_text {
+  height: 40px;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.all .content .content_group .content_box .card_text:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 8'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23453886' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-size: 20%;
+  border-bottom: 0;
+  text-decoration: none;
+  padding: 0;
+}
+
+.all .content .content_group .content_box #emergency_img {
+  background-image: url(/img/emergency-health.png);
+}
+
+.all .content .content_group .content_box #health_img {
+  background-image: url(/img/healthcheck.png);
+}
+
+.all .content .content_group .content_box #learning_img {
+  background-image: url(/img/study.png);
+}
+
+.all .content .content_group #emergency_box {
+  margin-right: 100px;
+}
+
+.all .content .content_group #learning_box {
+  margin-left: 100px;
+}
+
+.all .division_icongroup {
+  width: 700px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+.all .division_icongroup .divison_icon {
+  margin: 40px 0;
+  opacity: 0.5;
+}
+
+.all .division_icongroup .divison_icon:hover {
+  opacity: 1;
+}
+
+.all .division_introduce {
+  width: 700px;
+  margin: 10px auto 30px auto;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+.all .division_introduce h5 {
+  letter-spacing: 10px;
+  padding-bottom: 20px;
+}
+
+.all .division_introduce p {
+  letter-spacing: 5px;
+  line-height: 10px;
+}
+
+.all .footer {
+  width: 100%;
+  height: 30px;
+  margin-top: 5px;
+}
+
+.all .footer .footer_text {
+  width: 1000px;
+  height: 30px;
+  background-color: #cecdcd;
+  line-height: 31px;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+/*# sourceMappingURL=style_index.css.map */

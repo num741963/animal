@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>分院資訊</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.8.1/fullcalendar.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.8.1/fullcalendar.print.css" rel="stylesheet"
+        media="print">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/scss/style_hospital.css">
+
+</head>
+
+<body>
+
+    <div class="all">
+        <div class="nav d-flex">
+            <div class="navbar">
+                <a href="index.html">
+                    <div class="logo"></div>
+                </a>
+                <div class="logo_title d-flex flex-column">
+                    <h2>全國動物醫院</h2>
+                    <p>National Veterinary Hospital</p>
+                </div>
+                <div class="navmenu">
+                    <div class="menu"></div>
+                    <div class="navmenu_content dropdown-menu-right">
+                        <a href="index.html#cat_icon" class="menu_title">專業分科</a>
+                        <a href="hospital.html" class="menu_title">分院資訊</a>
+                        <a href="aboutus.html" class="menu_title">關於全國</a>
+                        <a href="addus.html" class="menu_title">加入我們</a>
+                        <a href="books.html" class="menu_title">掌印專刊</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="calendar">
+            <div class="calendar_title">醫師輪值表</div>
+            <div class="calendar_box">
+                <div id="example"></div>
+            </div>
+        </div>
+
+
+        <div class="hospital_box">
+            <h2>北區分院</h2>
+            <div class="map_site row justify-content-around">
+                <!-- 台北 -->
+                <div class="taipei_site col-lg-3 col-md-4 col-xs-12 sitebox m-auto">
+                    <button onclick="document.getElementById('id01').style.display='block'"
+                        class="w3-button w3-light-blue w3-round-large w3-ripple">
+                        <div class="button_title">台北分院</div>
+                    </button>
+
+                    <div id="id01" class="w3-modal">
+                        <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+                            <header class="taipei_header w3-indigo d-flex justify-content-around">
+                                <h5>台北分院</h5>
+                                <span onclick="document.getElementById('id01').style.display='none'"
+                                    class="w3-button-sm w3-indigo w3-display-topright">關閉視窗</span>
+                            </header>
+
+                            <div class="w3-bar w3-border-bottom">
+                                <button class="tablink w3-bar-item w3-button"
+                                    onclick="openCity(event, 'taipei_map')">詳細位置</button>
+                                <button class="tablink w3-bar-item w3-button"
+                                    onclick="openCity(event, 'taipei_time')">營業資訊</button>
+                                <button class="tablink w3-bar-item w3-button"
+                                    onclick="openCity(event, 'taipei_doctor')">醫師清單</button>
+                            </div>
+
+                            <div id="taipei_map" class="taipei_site city">
+                                <h1>地圖</h1>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.3020491714014!2d121.57812761544717!3d25.057749643492052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442ab824e29c725%3A0x5d3ed2abe82c0f0f!2zMTE05Y-w5YyX5biC5YWn5rmW5Y2A6IiK5a6X6Lev5LiA5q61MzDlt7cxM-iZnw!5e0!3m2!1szh-TW!2stw!4v1578473823781!5m2!1szh-TW!2stw"
+                                    width="100%" height="450" frameborder="0" style="border:0;"
+                                    allowfullscreen=""></iframe>
+                            </div>
+
+                            <div id="taipei_time" class="taipei_site city">
+                                <h1>營業資訊</h1>
+                                <p>地址：台北市內湖區舊宗路一段30巷13號<br>電話：02-87918706 / 02-77306195<br>營業時間：24H小時不打烊</p>
+                            </div>
+
+                            <div id="taipei_doctor" class="taipei_site city">
+                                <h1>醫師清單</h1>
+                                <div class="doctor_group row flex-wrap">
+                                    <div class="col-3 doctor_pic"><img src="/img/謝芬芳(2).jpg" style="width: 120px;">
+                                        <p>台北分院院長 謝芬芳</p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/鄭玉津(1).jpg" style="width: 120px;">
+                                        <p>獸醫師 鄭玉津</p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/李效唐.jpg" style="width: 120px;">
+                                        <p>獸醫師 李效唐</p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/洪端漪.jpg" style="width: 120px;">
+                                        <p>獸醫師 洪端漪</p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/張祖駿.jpg" style="width: 120px;">
+                                        <p>獸醫師 張祖駿</p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/許展誠.jpg" style="width: 120px;">
+                                        <p>獸醫師 許展誠</p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/杜宇晨.jpg" style="width: 120px;">
+                                        <p>獸醫師 杜宇晨</p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/王嶽.jpg" style="width: 120px;">
+                                        <p>獸醫師 王嶽</p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/白天佑.jpg" style="width: 120px;">
+                                        <p>獸醫師 白天佑 </p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/惠之巍.png" style="width: 120px;">
+                                        <p>獸醫師 惠之巍</p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/林奕君.jpg" style="width: 120px;">
+                                        <p>獸醫師 林奕君</p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/王國芬.png" style="width: 120px;">
+                                        <p>獸醫師 王國芬</p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/朱道南.jpg" style="width: 120px;">
+                                        <p>獸醫師 朱道南</p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/呂宗祐.jpg" style="width: 120px;">
+                                        <p>獸醫師 呂宗祐</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 環球 -->
+                <div class="grobal_site col-lg-3 col-md-4 col-xs-12 sitebox m-auto">
+                    <button onclick="document.getElementById('id02').style.display='block'"
+                        class="w3-button w3-light-blue w3-round-large w3-ripple">
+                        <div class="button_title">環球分院</div>
+                    </button>
+
+                    <div id="id02" class="w3-modal">
+                        <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+                            <header class="grobal_header w3-indigo d-flex justify-content-around">
+                                <h5>環球分院</h5>
+                                <span onclick="document.getElementById('id02').style.display='none'"
+                                    class="w3-button-sm w3-indigo w3-display-topright">關閉視窗</span>
+                            </header>
+
+                            <div class="w3-bar w3-border-bottom">
+                                <button class="tablink w3-bar-item w3-button"
+                                    onclick="openCity(event, 'grobal_map')">詳細位置</button>
+                                <button class="tablink w3-bar-item w3-button"
+                                    onclick="openCity(event, 'grobal_time')">營業資訊</button>
+                                <button class="tablink w3-bar-item w3-button"
+                                    onclick="openCity(event, 'grobal_doctor')">醫師清單</button>
+                            </div>
+
+                            <div id="grobal_map" class="grobal_site city">
+                                <h1>地圖</h1>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7231.614013763222!2d121.474779!3d25.006673!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a827389b8269%3A0x5a6d3e0eda5d2f9d!2zMjM15paw5YyX5biC5Lit5ZKM5Y2A5Lit5bGx6Lev5LiJ5q61MTIy6Jmf!5e0!3m2!1szh-TW!2stw!4v1578561834692!5m2!1szh-TW!2stw"
+                                    width="100%" height="450" frameborder="0" style="border:0;"
+                                    allowfullscreen=""></iframe>
+                            </div>
+
+                            <div id="grobal_time" class="grobal_site city">
+                                <h1>營業資訊</h1>
+                                <p>地址：新北市中和區中山路三段122號1樓<br>電話：02-77312991<br>營業時間：每週一至週日10:00-21:00<br>每週三10:00-21:00
+                                </p>
+                            </div>
+
+                            <div id="grobal_doctor" class="grobal_site city">
+                                <h1>醫師清單</h1>
+                                <div class="doctor_group row flex-wrap">
+                                    <div class="col-3 doctor_pic"><img src="/img/謝芬芳(2).jpg" style="width: 120px;">
+                                        <p>台北分院院長 謝芬芳</p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/張祖駿.jpg" style="width: 120px;">
+                                        <p>獸醫師 張祖駿</p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/呂宗祐.jpg" style="width: 120px;">
+                                        <p>獸醫師 呂宗祐</p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/王嶽.jpg" style="width: 120px;">
+                                        <p>獸醫師 王嶽</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 永和 -->
+                <div class="yonghe_site col-lg-3 col-md-4 col-xs-12 sitebox m-auto">
+                    <button onclick="document.getElementById('id03').style.display='block'"
+                        class="w3-button w3-light-blue w3-round-large w3-ripple">
+                        <div class="button_title">永和分院</div>
+                    </button>
+
+                    <div id="id03" class="w3-modal">
+                        <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+                            <header class="yonghe_header w3-indigo d-flex justify-content-around">
+                                <h5>永和分院</h5>
+                                <span onclick="document.getElementById('id03').style.display='none'"
+                                    class="w3-button-sm w3-indigo w3-display-topright">關閉視窗</span>
+                            </header>
+
+                            <div class="w3-bar w3-border-bottom">
+                                <button class="tablink w3-bar-item w3-button"
+                                    onclick="openCity(event, 'yonghe_map')">詳細位置</button>
+                                <button class="tablink w3-bar-item w3-button"
+                                    onclick="openCity(event, 'yonghe_time')">營業資訊</button>
+                                <button class="tablink w3-bar-item w3-button"
+                                    onclick="openCity(event, 'yonghe_doctor')">醫師清單</button>
+                            </div>
+
+                            <div id="yonghe_map" class="yonghe_site city">
+                                <h1>地圖</h1>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7231.783500402605!2d121.51524800000001!3d25.003794!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a9e79956e96f%3A0xa454d1153b54e91a!2zMjM05paw5YyX5biC5rC45ZKM5Y2A5rC46LKe6LevMTc16Jmf!5e0!3m2!1szh-TW!2stw!4v1578561768561!5m2!1szh-TW!2stw"
+                                    width="100%" height="450" frameborder="0" style="border:0;"
+                                    allowfullscreen=""></iframe>
+                            </div>
+
+                            <div id="yonghe_time" class="yonghe_site city">
+                                <h1>營業資訊</h1>
+                                <p>地址：新北市永和區永貞路175號1樓<br>電話：02-89231148<br>營業時間：每週一至週日10:00-21:00<br>每週三10:00-21:00
+                                </p>
+                            </div>
+
+                            <div id="yonghe_doctor" class="yonghe_site city">
+                                <h1>醫師清單</h1>
+                                <div class="doctor_group row flex-wrap">
+                                    <div class="col-3 doctor_pic"><img src="/img/許爾軒.jpg" style="width: 120px;">
+                                        <p>永和分院院長 許爾軒</p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/林銘璋.jpg" style="width: 120px;">
+                                        <p>獸醫師 林銘璋</p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/白天佑.jpg" style="width: 120px;">
+                                        <p>獸醫師 白天佑</p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/呂宗祐.jpg" style="width: 120px;">
+                                        <p>獸醫師 呂宗祐</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <h2>中區分院</h2>
+            <div class="map_site row justify-content-around">
+                <!-- 總院 -->
+                <div class="general_site col-lg-1 col-md-2 col-xs-12 sitebox">
+                    <button onclick="document.getElementById('id04').style.display='block'"
+                        class="w3-button w3-light-blue w3-round-large w3-ripple">
+                        <div class="button_title">台中總院</div>
+                    </button>
+
+                    <div id="id04" class="w3-modal">
+                        <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+                            <header class="general_header w3-indigo d-flex justify-content-around">
+                                <h5>台中總院</h5>
+                                <span onclick="document.getElementById('id04').style.display='none'"
+                                    class="w3-button-sm w3-indigo w3-display-topright">關閉視窗</span>
+                            </header>
+
+                            <div class="w3-bar w3-border-bottom">
+                                <button class="tablink w3-bar-item w3-button"
+                                    onclick="openCity(event, 'general_map')">詳細位置</button>
+                                <button class="tablink w3-bar-item w3-button"
+                                    onclick="openCity(event, 'general_time')">營業資訊</button>
+                                <button class="tablink w3-bar-item w3-button"
+                                    onclick="openCity(event, 'general_doctor')">醫師清單</button>
+                            </div>
+
+                            <div id="general_map" class="general_site city">
+                                <h1>地圖</h1>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7282.141863165758!2d120.662343!3d24.134147!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693da8a4e4d207%3A0x3d8da949a820eca!2zNDAz5Y-w5Lit5biC6KW_5Y2A5LqU5qyK5YWr6KGXMTAw6Jmf!5e0!3m2!1szh-TW!2stw!4v1578746667092!5m2!1szh-TW!2stw"
+                                    width="100%" height="450" frameborder="0" style="border:0;"
+                                    allowfullscreen=""></iframe>
+                            </div>
+
+                            <div id="general_time" class="general_site city">
+                                <h1>營業資訊</h1>
+                                <p>地址：台中市西區五權八街100號<br>電話：04-23710496<br>營業時間：24H小時不打烊</p>
+                            </div>
+
+                            <div id="general_doctor" class="general_site city">
+                                <h1>醫師清單</h1>
+                                <div class="doctor_group row flex-wrap">
+                                    <div class="col-3 doctor_pic"><img src="/img/顏于婷.jpg" style="width: 120px;">
+                                        <p>台中總院院長 顏于婷</p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/許展誠.jpg" style="width: 120px;">
+                                        <p>獸醫師 許展誠</p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/餘宗霖.jpg" style="width: 120px;">
+                                        <p>獸醫師 餘宗霖</p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/洪奇正.jpg" style="width: 120px;">
+                                        <p>獸醫師 洪奇正</p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/林源盛.jpg" style="width: 120px;">
+                                        <p>獸醫師 林源盛</p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/王善群.jpg" style="width: 120px;">
+                                        <p>獸醫師 王善群</p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/萬耿安.jpg" style="width: 120px;">
+                                        <p>獸醫師 萬耿安</p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/楊佳玲.jpg" style="width: 120px;">
+                                        <p>獸醫師 楊佳玲</p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/鄭亦均.jpg" style="width: 120px;">
+                                        <p>獸醫師 鄭亦均</p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/洪千惠.jpg" style="width: 120px;">
+                                        <p>獸醫師 洪千惠</p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/陳宜妏.jpg" style="width: 120px;">
+                                        <p>獸醫師 陳宜妏</p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/黃于倫.jpg" style="width: 120px;">
+                                        <p>獸醫師 黃于倫</p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/陳正傑1.jpg" style="width: 120px;">
+                                        <p>獸醫師 陳正傑</p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/翁敏捷.jpg" style="width: 120px;">
+                                        <p>獸醫師 翁敏捷</p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/楊杰叡.jpg" style="width: 120px;">
+                                        <p>獸醫師 楊杰叡</p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/杜瑜欣.jpg" style="width: 120px;">
+                                        <p>獸醫師 杜瑜欣</p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/曾光佑.jpg" style="width: 120px;">
+                                        <p>獸醫師 曾光佑</p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/曾光佑.jpg" style="width: 120px;">
+                                        <p>獸醫師 王文秀</p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/郭旆妤.jpg" style="width: 120px;">
+                                        <p>獸醫師 郭斾妤</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- 貓醫院 -->
+                <div class="jinhua_site col-lg-1 col-md-2 col-xs-12 sitebox">
+                    <button onclick="document.getElementById('id05').style.display='block'"
+                        class="w3-button w3-light-blue w3-round-large w3-ripple">
+                        <div class="button_title">貓科醫院</div>
+                    </button>
+
+                    <div id="id05" class="w3-modal">
+                        <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+                            <header class="jinhua_header w3-indigo d-flex justify-content-around">
+                                <h5>貓科醫院</h5>
+                                <span onclick="document.getElementById('id05').style.display='none'"
+                                    class="w3-button-sm w3-indigo w3-display-topright">關閉視窗</span>
+                            </header>
+
+                            <div class="w3-bar w3-border-bottom">
+                                <button class="tablink w3-bar-item w3-button"
+                                    onclick="openCity(event, 'jinhua_map')">詳細位置</button>
+                                <button class="tablink w3-bar-item w3-button"
+                                    onclick="openCity(event, 'jinhua_time')">營業資訊</button>
+                                <button class="tablink w3-bar-item w3-button"
+                                    onclick="openCity(event, 'jinhua_doctor')">醫師清單</button>
+                            </div>
+
+                            <div id="jinhua_map" class="jinhua_site city">
+                                <h1>地圖</h1>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3640.2436038910046!2d120.686193!3d24.163188!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2b6376834b36c4f8!2z5YWo5ZyL5YuV54mp6Yar6ZmiIOiyk-mGq-mZog!5e0!3m2!1szh-TW!2stw!4v1578768225860!5m2!1szh-TW!2stw"
+                                    width="100%" height="450" frameborder="0" style="border:0;"
+                                    allowfullscreen=""></iframe>
+                            </div>
+
+                            <div id="jinhua_time" class="jinhua_site city">
+                                <h1>營業資訊</h1>
+                                <p>地址：台中市北區進化北路162號<br>電話：04-22377025<br>營業時間：每週一至週日10:00-21:00<br>每週三10:00-21:00</p>
+                            </div>
+
+                            <div id="jinhua_doctor" class="jinhua_site city">
+                                <h1>醫師清單</h1>
+                                <div class="doctor_group row flex-wrap">
+                                    <div class="col-3 doctor_pic"><img src="/img/黃千育.jpg" style="width: 120px;">
+                                        <p>貓醫院院長 黃千育</p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/鄧炳池.jpg" style="width: 120px;">
+                                        <p>獸醫師 鄧炳池</p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/林欣宜.jpg" style="width: 120px;">
+                                        <p>獸醫師 林欣宜</p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/覃世芳.jpg" style="width: 120px;">
+                                        <p>獸醫師 覃世芳</p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/李伯儒.png" style="width: 120px;">
+                                        <p>獸醫師 李柏儒</p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/張家郡.jpg" style="width: 120px;">
+                                        <p>獸醫師 張家郡</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 文心 -->
+                <div class="wenxin_site col-lg-1 col-md-2 col-xs-12 sitebox">
+                    <button onclick="document.getElementById('id06').style.display='block'"
+                        class="w3-button w3-light-blue w3-round-large w3-ripple">
+                        <div class="button_title">文心分院</div>
+                    </button>
+
+                    <div id="id06" class="w3-modal">
+                        <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+                            <header class="wenxin_header w3-indigo d-flex justify-content-around">
+                                <h5>文心分院</h5>
+                                <span onclick="document.getElementById('id06').style.display='none'"
+                                    class="w3-button-sm w3-indigo w3-display-topright">關閉視窗</span>
+                            </header>
+
+                            <div class="w3-bar w3-border-bottom">
+                                <button class="tablink w3-bar-item w3-button"
+                                    onclick="openCity(event, 'wenxin_map')">詳細位置</button>
+                                <button class="tablink w3-bar-item w3-button"
+                                    onclick="openCity(event, 'wenxin_time')">營業資訊</button>
+                                <button class="tablink w3-bar-item w3-button"
+                                    onclick="openCity(event, 'wenxin_doctor')">醫師清單</button>
+                            </div>
+
+                            <div id="wenxin_map" class="wenxin_site city">
+                                <h1>地圖</h1>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d909.9917790980509!2d120.680428!3d24.172886!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf17d3aef6a458ffa!2z5YWo5ZyL5YuV54mp6Yar6ZmiIOaWh-W_g-WIhumZog!5e0!3m2!1szh-TW!2stw!4v1578766530271!5m2!1szh-TW!2stw"
+                                    width="100%" height="450" frameborder="0" style="border:0;"
+                                    allowfullscreen=""></iframe>
+                            </div>
+
+                            <div id="wenxin_time" class="wenxin_site city">
+                                <h1>營業資訊</h1>
+                                <p>地址：台中市文心路四段325號<br>電話：04-22478377<br>營業時間：每週一至週日10:00-21:00<br>每週三10:00-21:00</p>
+                            </div>
+
+                            <div id="wenxin_doctor" class="wenxin_site city">
+                                <h1>醫師清單</h1>
+                                <div class="doctor_group row flex-wrap">
+                                    <div class="col-3 doctor_pic"><img src="/img/李侯承.jpg" style="width: 120px;">
+                                        <p>文心分院院長 李侯承</p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/林欣宜.jpg" style="width: 120px;">
+                                        <p>獸醫師 林欣宜</p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/王善群.jpg" style="width: 120px;">
+                                        <p>獸醫師 王善群</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 七期 -->
+                <div class="wuquan_site col-lg-1 col-md-2 col-xs-12 sitebox">
+                    <button onclick="document.getElementById('id07').style.display='block'"
+                        class="w3-button w3-light-blue w3-round-large w3-ripple">
+                        <div class="button_title">七期分院</div>
+                    </button>
+
+                    <div id="id07" class="w3-modal">
+                        <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+                            <header class="wuquan_header w3-indigo d-flex justify-content-around">
+                                <h5>七期分院</h5>
+                                <span onclick="document.getElementById('id07').style.display='none'"
+                                    class="w3-button-sm w3-indigo w3-display-topright">關閉視窗</span>
+                            </header>
+
+                            <div class="w3-bar w3-border-bottom">
+                                <button class="tablink w3-bar-item w3-button"
+                                    onclick="openCity(event, 'wuquan_map')">詳細位置</button>
+                                <button class="tablink w3-bar-item w3-button"
+                                    onclick="openCity(event, 'wuquan_time')">營業資訊</button>
+                                <button class="tablink w3-bar-item w3-button"
+                                    onclick="openCity(event, 'wuquan_doctor')">醫師清單</button>
+                            </div>
+
+                            <div id="wuquan_map" class="wuquan_site city">
+                                <h1>地圖</h1>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1820.4546671056937!2d120.64895!3d24.139822!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe7b627ceec4d2ac7!2z5YWo5ZyL5YuV54mp6Yar6ZmiIOS4g-acn-WIhumZog!5e0!3m2!1szh-TW!2stw!4v1578767245955!5m2!1szh-TW!2stw"
+                                    width="100%" height="450" frameborder="0" style="border:0;"
+                                    allowfullscreen=""></iframe>
+                            </div>
+
+                            <div id="wuquan_time" class="wuquan_site city">
+                                <h1>營業資訊</h1>
+                                <p>地址：台中市五權西路二段203號<br>電話：04-24712853<br>營業時間：每週一至週日10:00-21:00</p>
+                            </div>
+
+                            <div id="wuquan_doctor" class="wuquan_site city">
+                                <h1>醫師清單</h1>
+                                <div class="doctor_group row flex-wrap">
+                                    <div class="col-3 doctor_pic"><img src="/img/鄭玉津(1).jpg" style="width: 120px;">
+                                        <p>七期分院院長 鄭玉津</p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/梅家熒.jpg" style="width: 120px;">
+                                        <p>獸醫師 梅家熒</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 中科 -->
+                <div class="wenxin_site col-lg-1 col-md-2 col-xs-12 sitebox">
+                    <button onclick="document.getElementById('id08').style.display='block'"
+                        class="w3-button w3-light-blue w3-round-large w3-ripple">
+                        <div class="button_title">中科分院</div>
+                    </button>
+
+                    <div id="id08" class="w3-modal">
+                        <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+                            <header class="wenxin_header w3-indigo d-flex justify-content-around">
+                                <h5>中科分院</h5>
+                                <span onclick="document.getElementById('id08').style.display='none'"
+                                    class="w3-button-sm w3-indigo w3-display-topright">關閉視窗</span>
+                            </header>
+
+                            <div class="w3-bar w3-border-bottom">
+                                <button class="tablink w3-bar-item w3-button"
+                                    onclick="openCity(event, 'wenxin_map')">詳細位置</button>
+                                <button class="tablink w3-bar-item w3-button"
+                                    onclick="openCity(event, 'wenxin_time')">營業資訊</button>
+                                <button class="tablink w3-bar-item w3-button"
+                                    onclick="openCity(event, 'wenxin_doctor')">醫師清單</button>
+                            </div>
+
+                            <div id="wenxin_map" class="wenxin_site city">
+                                <h1>地圖</h1>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d909.9045020642484!2d120.617941!3d24.185126!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd359477561ce1001!2z5YWo5ZyL5YuV54mp6Yar6ZmiIOS4reenkeWIhumZog!5e0!3m2!1szh-TW!2stw!4v1578766705589!5m2!1szh-TW!2stw"
+                                    width="100%" height="450" frameborder="0" style="border:0;"
+                                    allowfullscreen=""></iframe>
+                            </div>
+
+                            <div id="wenxin_time" class="wenxin_site city">
+                                <h1>營業資訊</h1>
+                                <p>地址：台中市西屯區福科路537號<br>電話：04-24617968<br>營業時間：每週一至週日10:00-21:00<br>每週三10:00-21:00</p>
+                            </div>
+
+                            <div id="wenxin_doctor" class="wenxin_site city">
+                                <h1>醫師清單</h1>
+                                <div class="doctor_group row flex-wrap">
+                                    <div class="col-3 doctor_pic"><img src="/img/王允軍.jpg" style="width: 120px;">
+                                        <p>中科分院院長 王允軍</p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/林源盛.jpg" style="width: 120px;">
+                                        <p>獸醫師 林源盛</p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/翁敏捷.jpg" style="width: 120px;">
+                                        <p>獸醫師 翁敏捷</p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/羅勝吉.jpg" style="width: 120px;">
+                                        <p>獸醫師 羅勝吉</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 精業 -->
+                <div class="daye_site col-lg-1 col-md-2 col-xs-12 sitebox">
+                    <button onclick="document.getElementById('id10').style.display='block'"
+                        class="w3-button w3-light-blue w3-round-large w3-ripple">
+                        <div class="button_title">精業分院</div>
+                    </button>
+
+                    <div id="id10" class="w3-modal">
+                        <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+                            <header class="daye_header w3-indigo d-flex justify-content-around">
+                                <h5>精業分院</h5>
+                                <span onclick="document.getElementById('id10').style.display='none'"
+                                    class="w3-button-sm w3-indigo w3-display-topright">關閉視窗</span>
+                            </header>
+
+                            <div class="w3-bar w3-border-bottom">
+                                <button class="tablink w3-bar-item w3-button"
+                                    onclick="openCity(event, 'daye_map')">詳細位置</button>
+                                <button class="tablink w3-bar-item w3-button"
+                                    onclick="openCity(event, 'daye_time')">營業資訊</button>
+                                <button class="tablink w3-bar-item w3-button"
+                                    onclick="openCity(event, 'daye_doctor')">醫師清單</button>
+                            </div>
+
+                            <div id="daye_map" class="daye_site city">
+                                <h1>地圖</h1>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d910.1298186893711!2d120.64601299999998!3d24.153515!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6942a52f50c3ad1!2z5YWo5ZyL5YuV54mp6Yar6ZmiIOeyvualreWIhumZog!5e0!3m2!1szh-TW!2stw!4v1578765864576!5m2!1szh-TW!2stw"
+                                    width="100%" height="450" frameborder="0" style="border:0;"
+                                    allowfullscreen=""></iframe>
+                            </div>
+
+                            <div id="daye_time" class="daye_site city">
+                                <h1>營業資訊</h1>
+                                <p>地址：台中市南屯區大業路357號<br>電話：04-2252-0993<br>營業時間：每週一、二、四、五12:00~20:00<br>每週六、日10:30~20:00<br>每週三15:00~21:00
+                                </p>
+                            </div>
+
+                            <div id="daye_doctor" class="daye_site city">
+                                <h1>醫師清單</h1>
+                                <div class="doctor_group row flex-wrap">
+                                    <div class="col-3 doctor_pic"><img src="/img/施懿軒.jpg" style="width: 120px;">
+                                        <p>精業分院院長 施懿軒</p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/鄧炳池.jpg" style="width: 120px;">
+                                        <p>獸醫師 鄧炳池</p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/李伯儒.png" style="width: 120px;">
+                                        <p>獸醫師 李柏儒</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 北全 -->
+                <div class="beitun_site col-lg-1 col-md-2 col-xs-12 sitebox">
+                    <button onclick="document.getElementById('id10').style.display='block'"
+                        class="w3-button w3-light-blue w3-round-large w3-ripple">
+                        <div class="button_title">北全分院</div>
+                    </button>
+
+                    <div id="id10" class="w3-modal">
+                        <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+                            <header class="beitun_header w3-indigo d-flex justify-content-around">
+                                <h5>北全分院</h5>
+                                <span onclick="document.getElementById('id10').style.display='none'"
+                                    class="w3-button-sm w3-indigo w3-display-topright">關閉視窗</span>
+                            </header>
+
+                            <div class="w3-bar w3-border-bottom">
+                                <button class="tablink w3-bar-item w3-button"
+                                    onclick="openCity(event, 'beitun_map')">詳細位置</button>
+                                <button class="tablink w3-bar-item w3-button"
+                                    onclick="openCity(event, 'beitun_time')">營業資訊</button>
+                                <button class="tablink w3-bar-item w3-button"
+                                    onclick="openCity(event, 'beitun_doctor')">醫師清單</button>
+                            </div>
+
+                            <div id="beitun_map" class="beitun_site city">
+                                <h1>地圖</h1>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7280.207610279916!2d120.69660099999999!3d24.168092!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346917e5b15a9201%3A0xbe3b93031af3ada1!2zNDA25Y-w5Lit5biC5YyX5bGv5Y2A5YyX5bGv6LevMjIw6Jmf!5e0!3m2!1szh-TW!2stw!4v1578765520849!5m2!1szh-TW!2stw"
+                                    width="100%" height="450" frameborder="0" style="border:0;"
+                                    allowfullscreen=""></iframe>
+                            </div>
+
+                            <div id="beitun_time" class="beitun_site city">
+                                <h1>營業資訊</h1>
+                                <p>地址：台中市北屯區北屯路220號<br>電話：04-22360903<br>營業時間：每週一、二、五、六、日10:30-21:00<br>每週三15:00-21:00<br>每週四11:00-20:00
+                                </p>
+                            </div>
+
+                            <div id="beitun_doctor" class="beitun_site city">
+                                <h1>醫師清單</h1>
+                                <div class="doctor_group row flex-wrap">
+                                    <div class="col-3 doctor_pic"><img src="/img/洪奇正.jpg" style="width: 120px;">
+                                        <p>北全分院院長 洪奇正</p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/陳依真.jpg" style="width: 120px;">
+                                        <p>獸醫師 陳依真</p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/賴欣妤.jpg" style="width: 120px;">
+                                        <p>獸醫師 賴欣妤</p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/楊杰叡.jpg" style="width: 120px;">
+                                        <p>獸醫師 楊傑叡</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 豐原 -->
+                <div class="fengyuan_site col-lg-1 col-md-2 col-xs-12 sitebox">
+                    <button onclick="document.getElementById('id11').style.display='block'"
+                        class="w3-button w3-light-blue w3-round-large w3-ripple">
+                        <div class="button_title">豐原分院</div>
+                    </button>
+
+                    <div id="id11" class="w3-modal">
+                        <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+                            <header class="fengyuan_header w3-indigo d-flex justify-content-around">
+                                <h5>豐原分院</h5>
+                                <span onclick="document.getElementById('id11').style.display='none'"
+                                    class="w3-button-sm w3-indigo w3-display-topright">關閉視窗</span>
+                            </header>
+
+                            <div class="w3-bar w3-border-bottom">
+                                <button class="tablink w3-bar-item w3-button"
+                                    onclick="openCity(event, 'fengyuan_map')">詳細位置</button>
+                                <button class="tablink w3-bar-item w3-button"
+                                    onclick="openCity(event, 'fengyuan_time')">營業資訊</button>
+                                <button class="tablink w3-bar-item w3-button"
+                                    onclick="openCity(event, 'fengyuan_doctor')">醫師清單</button>
+                            </div>
+
+                            <div id="fengyuan_map" class="fengyuan_site city">
+                                <h1>地圖</h1>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d454.6832889803199!2d120.725593!3d24.260438!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xaa77b5f4002277c6!2z5YWo5ZyL5YuV54mp6Yar6ZmiIOixkOWOn-WIhumZog!5e0!3m2!1szh-TW!2stw!4v1578767516387!5m2!1szh-TW!2stw"
+                                    width="100%" height="450" frameborder="0" style="border:0;"
+                                    allowfullscreen=""></iframe>
+                            </div>
+
+                            <div id="fengyuan_time" class="fengyuan_site city">
+                                <h1>營業資訊</h1>
+                                <p>地址：台中市豐原區圓環北路二段251號<br>電話：04-25249607<br>營業時間：每週一至週日10:00-21:00<br>每週三10:00-21:00</p>
+                            </div>
+
+                            <div id="fengyuan_doctor" class="fengyuan_site city">
+                                <h1>醫師清單</h1>
+                                <div class="doctor_group row flex-wrap">
+                                    <div class="col-3 doctor_pic"><img src="/img/李侯承.jpg" style="width: 120px;">
+                                        <p>豐原分院院長 李侯承</p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/王允軍.jpg" style="width: 120px;">
+                                        <p>獸醫師 王允軍</p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/羅勝吉.jpg" style="width: 120px;">
+                                        <p>獸醫師 羅勝吉</p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/曾光佑.jpg" style="width: 120px;">
+                                        <p>獸醫師 曾光佑</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 大雅 -->
+                <div class="daya_site col-lg-1 col-md-2 col-xs-12 sitebox">
+                    <button onclick="document.getElementById('id12').style.display='block'"
+                        class="w3-button w3-light-blue w3-round-large w3-ripple">
+                        <div class="button_title">大雅分院</div>
+                    </button>
+
+                    <div id="id12" class="w3-modal">
+                        <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+                            <header class="daya_header w3-indigo d-flex justify-content-around">
+                                <h5>大雅分院</h5>
+                                <span onclick="document.getElementById('id12').style.display='none'"
+                                    class="w3-button-sm w3-indigo w3-display-topright">關閉視窗</span>
+                            </header>
+
+                            <div class="w3-bar w3-border-bottom">
+                                <button class="tablink w3-bar-item w3-button"
+                                    onclick="openCity(event, 'daya_map')">詳細位置</button>
+                                <button class="tablink w3-bar-item w3-button"
+                                    onclick="openCity(event, 'daya_time')">營業資訊</button>
+                                <button class="tablink w3-bar-item w3-button"
+                                    onclick="openCity(event, 'daya_doctor')">醫師清單</button>
+                            </div>
+
+                            <div id="daya_map" class="daya_site city">
+                                <h1>地圖</h1>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d910.0095645418878!2d120.671983!3d24.170391!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd5355225a064dcfb!2z5YWo5ZyL5YuV54mp6Yar6ZmiIOWkp-mbheWIhumZog!5e0!3m2!1szh-TW!2stw!4v1578767942458!5m2!1szh-TW!2stw"
+                                    width="100%" height="450" frameborder="0" style="border:0;"
+                                    allowfullscreen=""></iframe>
+                            </div>
+
+                            <div id="daya_time" class="daya_site city">
+                                <h1>營業資訊</h1>
+                                <p>地址：台中市北區中清路一段635號<br>電話：04-22954667<br>營業時間：每週一至週日10:00-21:00<br>每週三10:00-21:00</p>
+                            </div>
+
+                            <div id="daya_doctor" class="daya_site city">
+                                <h1>醫師清單</h1>
+                                <div class="doctor_group row flex-wrap">
+                                    <div class="col-3 doctor_pic"><img src="/img/餘宗霖.jpg" style="width: 120px;">
+                                        <p>大雅分院院長 餘宗霖</p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/賴欣妤.jpg" style="width: 120px;">
+                                        <p>獸醫師 賴欣妤</p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/陳正傑1.jpg" style="width: 120px;">
+                                        <p>獸醫師 陳正傑</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 大里 -->
+                <div class="dali_site col-lg-1 col-md-2 col-xs-12 sitebox">
+                    <button onclick="document.getElementById('id13').style.display='block'"
+                        class="w3-button w3-light-blue w3-round-large w3-ripple">
+                        <div class="button_title">大里分院</div>
+                    </button>
+
+                    <div id="id13" class="w3-modal">
+                        <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+                            <header class="dali_header w3-indigo d-flex justify-content-around">
+                                <h5>大里分院</h5>
+                                <span onclick="document.getElementById('id13').style.display='none'"
+                                    class="w3-button-sm w3-indigo w3-display-topright">關閉視窗</span>
+                            </header>
+
+                            <div class="w3-bar w3-border-bottom">
+                                <button class="tablink w3-bar-item w3-button"
+                                    onclick="openCity(event, 'dali_map')">詳細位置</button>
+                                <button class="tablink w3-bar-item w3-button"
+                                    onclick="openCity(event, 'dali_time')">營業資訊</button>
+                                <button class="tablink w3-bar-item w3-button"
+                                    onclick="openCity(event, 'dali_doctor')">醫師清單</button>
+                            </div>
+
+                            <div id="dali_map" class="dali_site city">
+                                <h1>地圖</h1>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1820.8693485096774!2d120.679183!3d24.110683!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1412ca293e1d74e5!2z5YWo5ZyL5YuV54mp6Yar6ZmiIOWkp-mHjOWIhumZog!5e0!3m2!1szh-TW!2stw!4v1578768548945!5m2!1szh-TW!2stw"
+                                    width="100%" height="450" frameborder="0" style="border:0;"
+                                    allowfullscreen=""></iframe>
+                            </div>
+
+                            <div id="dali_time" class="dali_site city">
+                                <h1>營業資訊</h1>
+                                <p>地址：台中市大里區國光路二段441號<br>電話：04-24077991<br>營業時間：每週一至週日10:00-21:00<br>每週三10:00-21:00</p>
+                            </div>
+
+                            <div id="dali_doctor" class="dali_site city">
+                                <h1>醫師清單</h1>
+                                <div class="doctor_group row flex-wrap">
+                                    <div class="col-3 doctor_pic"><img src="/img/林源盛.jpg" style="width: 120px;">
+                                        <p>獸醫師 林源盛</p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/伍振宇.jpg" style="width: 120px;">
+                                        <p>獸醫師 伍振宇</p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/施懿軒.jpg" style="width: 120px;">
+                                        <p>獸醫師 施懿軒</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <h2>南區分院</h2>
+            <div class="map_site row justify-content-center">
+
+                <!-- 永康 -->
+                <div class="yongkang_site col-lg-6 col-md-6 col-xs-12 sitebox m-auto">
+                    <button onclick="document.getElementById('id14').style.display='block'"
+                        class="w3-button w3-light-blue w3-round-large w3-ripple">
+                        <div class="button_title">永康分院</div>
+                    </button>
+
+                    <div id="id14" class="w3-modal">
+                        <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+                            <header class="yongkang_header w3-indigo d-flex justify-content-around">
+                                <h5>永康分院</h5>
+                                <span onclick="document.getElementById('id14').style.display='none'"
+                                    class="w3-button-sm w3-indigo w3-display-topright">關閉視窗</span>
+                            </header>
+
+                            <div class="w3-bar w3-border-bottom">
+                                <button class="tablink w3-bar-item w3-button"
+                                    onclick="openCity(event, 'yongkang_map')">詳細位置</button>
+                                <button class="tablink w3-bar-item w3-button"
+                                    onclick="openCity(event, 'yongkang_time')">營業資訊</button>
+                                <button class="tablink w3-bar-item w3-button"
+                                    onclick="openCity(event, 'yongkang_doctor')">醫師清單</button>
+                            </div>
+
+                            <div id="yongkang_map" class="yongkang_site city">
+                                <h1>地圖</h1>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.597470859065!2d120.23270795122752!3d23.001824984889755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e76c47192a8b3%3A0x42317a2c7dbe6317!2zNzEw5Y-w5Y2X5biC5rC45bq35Y2A5Lit6I-v6LevMTAzLTHomZ8y!5e0!3m2!1szh-TW!2stw!4v1578769019957!5m2!1szh-TW!2stw"
+                                    width="100%" height="450" frameborder="0" style="border:0;"
+                                    allowfullscreen=""></iframe>
+                            </div>
+
+                            <div id="yongkang_time" class="yongkang_site city">
+                                <h1>營業資訊</h1>
+                                <p>地址：台南市永康區中華路103號2樓<br>電話：06-3133116<br>營業時間：24H小時不打烊</p>
+                            </div>
+
+                            <div id="yongkang_doctor" class="yongkang_site city">
+                                <h1>醫師清單</h1>
+                                <div class="doctor_group row flex-wrap">
+                                    <div class="col-3 doctor_pic"><img src="/img/吳宜儒.jpg" style="width: 120px;">
+                                        <p>永康分院院長 吳宜儒</p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/邱翊隆.jpg" style="width: 120px;">
+                                        <p>獸醫師 邱翊隆</p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/韓昆樺.jpg" style="width: 120px;">
+                                        <p>獸醫師 韓昆樺</p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/陳怡樺.jpg" style="width: 120px;">
+                                        <p>獸醫師 陳怡樺</p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/陳羿翰.jpg" style="width: 120px;">
+                                        <p>獸醫師 陳羿翰</p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/戴哲南.jpg" style="width: 120px;">
+                                        <p>獸醫師 戴哲南</p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/曾婉婷.jpg" style="width: 120px;">
+                                        <p>獸醫師 曾婉婷</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 五期 -->
+                <div class="zhonghua_site col-lg-6 col-md-6 col-xs-12 sitebox m-auto">
+                    <button onclick="document.getElementById('id15').style.display='block'"
+                        class="w3-button w3-light-blue w3-round-large w3-ripple">
+                        <div class="button_title">五期分院</div>
+                    </button>
+
+                    <div id="id15" class="w3-modal">
+                        <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+                            <header class="zhonghua_header w3-indigo d-flex justify-content-around">
+                                <h5>五期分院</h5>
+                                <span onclick="document.getElementById('id15').style.display='none'"
+                                    class="w3-button-sm w3-indigo w3-display-topright">關閉視窗</span>
+                            </header>
+
+                            <div class="w3-bar w3-border-bottom">
+                                <button class="tablink w3-bar-item w3-button"
+                                    onclick="openCity(event, 'zhonghua_map')">詳細位置</button>
+                                <button class="tablink w3-bar-item w3-button"
+                                    onclick="openCity(event, 'zhonghua_time')">營業資訊</button>
+                                <button class="tablink w3-bar-item w3-button"
+                                    onclick="openCity(event, 'zhonghua_doctor')">醫師清單</button>
+                            </div>
+
+                            <div id="zhonghua_map" class="zhonghua_site city">
+                                <h1>地圖</h1>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d918.2757018856801!2d120.18592098812798!3d22.983246699056245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e75df5e43c00b%3A0x984c62376b8e46be!2zNzAy5Y-w5Y2X5biC5Y2X5Y2A5Lit6I-v6KW_6Lev5LiA5q61MzEw6Jmf!5e0!3m2!1szh-TW!2stw!4v1578769587908!5m2!1szh-TW!2stw"
+                                    width="100%" height="450" frameborder="0" style="border:0;"
+                                    allowfullscreen=""></iframe>
+                            </div>
+
+                            <div id="zhonghua_time" class="zhonghua_site city">
+                                <h1>營業資訊</h1>
+                                <p>地址：台南市南區中華西路一段310號<br>電話：06-2655757<br>營業時間：每週一至週日10:00-21:00<br>每週三10:00-21:00</p>
+                            </div>
+
+                            <div id="zhonghua_doctor" class="zhonghua_site city">
+                                <h1>醫師清單</h1>
+                                <div class="doctor_group row flex-wrap">
+                                    <div class="col-3 doctor_pic"><img src="/img/吳宜儒.jpg" style="width: 120px;">
+                                        <p>五期分院院長 吳宜儒</p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/陳羿翰.jpg" style="width: 120px;">
+                                        <p>獸醫師 陳羿翰</p>
+                                    </div>
+                                    <div class="col-3 doctor_pic"><img src="/img/陳怡樺.jpg" style="width: 120px;">
+                                        <p>獸醫師 陳怡樺</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="footer d-flex justify-content-center">
+                <div class="footer_text text-center">僅供學術交流學習 copyrightⒸ 2020</div>
+            </div>
+
+            <div class="gohome">
+                <a href="index.html">
+                    <img src="/img/home_2.png"
+                        style="width: 70px; z-index: 100; position: fixed; right: 5%; bottom: 1%;">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <!-- Moment.js v2.20.0 -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.0/moment.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.8.1/fullcalendar.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+
+    <script>
+        $("#example").fullCalendar({
+            header: { // 頂部排版
+                left: "prev,next today", // 左邊放置上一頁、下一頁和今天
+                center: "title", // 中間放置標題
+                right: "month,basicWeek,basicDay" // 右邊放置月、周、天
+            },
+            // defaultDate: "2020-01-12", // 起始日期
+            weekends: true, // 顯示星期六跟星期日
+            editable: true, // 啟動拖曳調整日期
+            events: [ // 事件
+                { // 事件
+                    title: "王善群",
+                    start: "2020-01-24T08:30:00",
+                    end: "2020-01-24T14:30:00"
+                },
+                { // 事件
+                    title: "餘宗霖",
+                    start: "2020-01-24T13:30:00",
+                    end: "2020-01-24T21:30:00"
+                },
+                { // 事件
+                    title: "杜瑜欣",
+                    start: "2020-01-24T17:30:00",
+                    end: "2020-01-24T21:30:00"
+                },
+                { // 事件
+                    title: "黃于倫",
+                    start: "2020-01-24T21:30:00",
+                    end: "2020-01-26T08:30:00"
+                },
+                { // 事件(包含跨日開始時間、結束時間)
+                    title: "志工服務",
+                    start: "2020-01-15",
+                    end: "2020-01-18"
+                },
+                { // 事件(包含開始時間、結束時間)
+                    title: "會議",
+                    start: "2020-01-12T10:30:00",
+                    end: "2020-01-12T12:30:00"
+                },
+                { // 事件(設定連結)
+                    title: "Click for 全國",
+                    url: "http://vet.com.tw/ab/se.php?f=3&cid=7",
+                    start: "2020-01-28"
+                }
+            ]
+        });
+    </script>
+    <script>
+        document.getElementsByClassName("tablink")[0].click();
+        function openCity(evt, cityName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("city");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].classList.remove("w3-pale-blue");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.classList.add("w3-pale-blue");
+        }
+    </script>
+
+
+</body>
+
+</html>
