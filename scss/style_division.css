@@ -21,7 +21,7 @@
 .all .nav .navbar .logo {
   width: 250px;
   height: 60px;
-  background-image: url(/img/logo2.jpg);
+  background-image: url(../img/logo2.jpg);
   background-size: 100% 100%;
 }
 
@@ -101,51 +101,51 @@
 }
 
 .all .division_content .division_icongroup #cat_icon {
-  background-image: url(/img/cat.png);
+  background-image: url(../img/cat.png);
 }
 
 .all .division_content .division_icongroup #rabbit_icon {
-  background-image: url(/img/rabbit.png);
+  background-image: url(../img/rabbit.png);
 }
 
 .all .division_content .division_icongroup #normal_icon {
-  background-image: url(/img/normal.png);
+  background-image: url(../img/normal.png);
 }
 
 .all .division_content .division_icongroup #esc_icon {
-  background-image: url(/img/esc.png);
+  background-image: url(../img/esc.png);
 }
 
 .all .division_content .division_icongroup #emergercy_icon {
-  background-image: url(/img/emergency.png);
+  background-image: url(../img/emergency.png);
 }
 
 .all .division_content .division_icongroup #eye_icon {
-  background-image: url(/img/eye.png);
+  background-image: url(../img/eye.png);
 }
 
 .all .division_content .division_icongroup #mouth_icon {
-  background-image: url(/img/teeth.png);
+  background-image: url(../img/teeth.png);
 }
 
 .all .division_content .division_icongroup #tumor_icon {
-  background-image: url(/img/tumor.png);
+  background-image: url(../img/tumor.png);
 }
 
 .all .division_content .division_icongroup #heart_icon {
-  background-image: url(/img/heart.png);
+  background-image: url(../img/heart.png);
 }
 
 .all .division_content .division_icongroup #kidney_icon {
-  background-image: url(/img/kidney.png);
+  background-image: url(../img/kidney.png);
 }
 
 .all .division_content .division_icongroup #skin_icon {
-  background-image: url(/img/skin.png);
+  background-image: url(../img/skin.png);
 }
 
 .all .division_content .division_icongroup #move_icon {
-  background-image: url(/img/move.png);
+  background-image: url(../img/move.png);
 }
 
 .all .division_content .division_icongroup #move_icon h6 {

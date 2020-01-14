@@ -25,7 +25,7 @@
 .all .nav .navbar .logo {
   width: 100px;
   height: 80px;
-  background-image: url(/img/logo_3.png);
+  background-image: url(../img/logo_3.png);
   background-size: 100% 100%;
   overflow: hidden;
   background-position: center center;
@@ -53,7 +53,7 @@
 }
 
 .all .nav .navbar .navmenu .menu {
-  background-image: url(/img/menuicon.png);
+  background-image: url(../img/menuicon.png);
   background-size: 100% 100%;
   width: 50px;
   height: 40px;
@@ -110,7 +110,7 @@
 .all .hospital_boss .boss_img {
   width: 50%;
   height: 300px;
-  background-image: url(/img/陳道杰.jpg);
+  background-image: url(../img/陳道杰.jpg);
   background-size: cover;
 }
 
@@ -126,7 +126,7 @@
 .all .hospital_group .hospital_map {
   width: 700px;
   height: 500px;
-  background-image: url(/img/mapsite.jpg);
+  background-image: url(../img/mapsite.jpg);
   background-size: 100% 100%;
 }
 

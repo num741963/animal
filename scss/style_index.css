@@ -24,7 +24,7 @@
 .all .nav .navbar .logo {
   width: 100px;
   height: 80px;
-  background-image: url(/img/logo_3.png);
+  background-image: url(../img/logo_3.png);
   background-size: 100% 100%;
   overflow: hidden;
   background-position: center center;
@@ -52,7 +52,7 @@
 }
 
 .all .nav .navbar .navmenu .menu {
-  background-image: url(/img/menuicon.png);
+  background-image: url(../img/menuicon.png);
   background-size: 100% 100%;
   width: 50px;
   height: 40px;
@@ -112,19 +112,19 @@
 }
 
 .all .swiper-container .swiper-wrapper #banner_1 {
-  background-image: url(/img/banner01.jpg);
+  background-image: url(../img/banner01.jpg);
 }
 
 .all .swiper-container .swiper-wrapper #banner_2 {
-  background-image: url(/img/banner02.jpg);
+  background-image: url(../img/banner02.jpg);
 }
 
 .all .swiper-container .swiper-wrapper #banner_3 {
-  background-image: url(/img/banner03.jpg);
+  background-image: url(../img/banner03.jpg);
 }
 
 .all .swiper-container .swiper-wrapper #banner_4 {
-  background-image: url(/img/banner04.jpg);
+  background-image: url(../img/banner04.jpg);
 }
 
 .all .news {
@@ -185,15 +185,15 @@
 }
 
 .all .content .content_group .content_box #emergency_img {
-  background-image: url(/img/emergency-health.png);
+  background-image: url(../img/emergency-health.png);
 }
 
 .all .content .content_group .content_box #health_img {
-  background-image: url(/img/healthcheck.png);
+  background-image: url(../img/healthcheck.png);
 }
 
 .all .content .content_group .content_box #learning_img {
-  background-image: url(/img/study.png);
+  background-image: url(../img/study.png);
 }
 
 .all .content .content_group #emergency_box {
